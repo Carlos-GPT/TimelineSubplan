@@ -40,3 +40,12 @@ To use in a project that uses ES6 modules and webpack, import the `Timeline` cla
 import { Timeline } from '@knight-lab/timelinejs';
 import '@knight-lab/timelinejs/dist/css/timeline.css';
 ```
+
+## Docker Deployment
+
+To run the TimelineJS website in a container you can build the provided Dockerfile.
+Execute `docker build -t timelinejs .` and start it with `docker run -p 8000:8000 timelinejs`.
+This will expose the application on port 8000 using Python Flask with the compiled assets.
+
+A versão em português do site pode ser acessada através de `/index_pt.html`.
+
